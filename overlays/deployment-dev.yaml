@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth2factor-deployment
+spec:
+  selector:
+    matchLabels:
+      app: auth2factor
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: auth2factor
+    
